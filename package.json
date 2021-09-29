@@ -33,7 +33,7 @@
     "styled-components": "^5.2.1"
   },
   "scripts": {
-    "start": "react-app-rewired start",
+    "start": "BROWSER=none react-app-rewired start",
     "emulate": "swa start http://localhost:3000 --api http://localhost:7071",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
