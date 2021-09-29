@@ -10,7 +10,7 @@
         "hidden": true
       },
       "webRoot": "${workspaceFolder}",
-      "preLaunchTask": "swa start"
+      "preLaunchTask": "swa: start"
     },
     {
       "name": "Attach to Node Functions",

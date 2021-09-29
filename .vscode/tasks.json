@@ -41,7 +41,7 @@
     },
     {
       "type": "shell",
-      "label": "swa start",
+      "label": "swa: start",
       "command": "swa start app",
       "problemMatcher": "$swa-watch",
       "isBackground": true

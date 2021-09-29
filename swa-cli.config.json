@@ -1,8 +1,8 @@
 {
   "configurations": {
     "app": {
-      "apiLocation": "http://localhost:7071",
       "context": "http://localhost:3000",
+      "apiLocation": "http://localhost:7071",
       "appLocation": ".",
       "run": "npm run start"
     }
