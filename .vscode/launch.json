@@ -1,33 +1,37 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Run frontend",
-      "request": "launch",
-      "type": "pwa-chrome",
-      "url": "http://localhost:4280",
-      "presentation": {
-        "hidden": true
-      },
-      "webRoot": "${workspaceFolder}",
-      "preLaunchTask": "swa: start"
-    },
-    {
-      "name": "Attach to Node Functions",
-      "type": "node",
-      "request": "attach",
-      "port": 9229,
-      "preLaunchTask": "func: host start"
-    }
-  ],
-  "compounds": [
-    {
-      "name": "SWA: Run and Debug",
-      "configurations": [
-        "Run frontend",
-        "Attach to Node Functions"
-      ],
-      "stopAll": true
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run frontend",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:4280",
+            "preLaunchTask": "swa: start",
+            "presentation": {
+                "hidden": true
+            },
+            "webRoot": "${workspaceFolder}/"
+        },
+        {
+            "name": "Attach to Node Functions",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "preLaunchTask": "func: host start"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "SWA: Run and Debug",
+            "configurations": [
+                "Run frontend",
+                "Attach to Node Functions"
+            ],
+            "stopAll": true,
+            "presentation": {
+                "hidden": false,
+                "order": 1
+            }
+        }
+    ]
 }
